@@ -1,0 +1,48 @@
+;; TODO: Need a set of standard quick apps to test against.
+{:paths ["src"]
+ :deps
+ {org.clojure/clojure         {:mvn/version "1.10.0"}
+  org.clojure/spec.alpha      {:mvn/version "0.2.176"}
+  org.clojure/tools.logging   {:mvn/version "0.4.1"}
+  com.cognitect/anomalies     {:mvn/version "0.1.12"}
+  ;; org.clojure/tools.cli       {:mvn/version "0.4.2"}
+
+  ;; Formats
+  metosin/jsonista {:mvn/version "0.2.2"}
+  clj-commons/clj-yaml {:mvn/version "0.7.0"}
+  clojure.java-time {:mvn/version "0.3.2"}
+  ;; Markdown?
+  
+  ;; Use inotify to watch for config, label, and annotation changes
+  juxt/dirwatch {:mvn/version "0.2.3"}
+  
+  ;; webserver - double check luminious
+  ;; lein new luminus guestbook +reitit +re-frame +graphql
+  ring/ring-core {:mvn/version "1.7.1"}
+  ring/ring-defaults {:mvn/version "0.3.2"}
+  ring/ring-jetty-adapter {:mvn/version "1.7.1"}
+  metosin/muuntaja {:mvn/version "0.6.4"}
+  metosin/reitit {:mvn/version "0.3.1"}
+  metosin/ring-http-response {:mvn/version "0.9.1"}
+
+  ;; API layer
+  com.walmartlabs/lacinia {:mvn/version "0.32.0"}
+  
+
+  ;; RPC
+  clj-http {:mvn/version "3.9.1"}
+  vincit/venia {:mvn/version "0.2.5"} ;; query graphql
+  ;; gRPC?
+  
+  ;; metrics
+
+  ;; tracing
+
+  ;; S3-alike blob store
+
+  ;; auth: buddy, JWT, oauth?
+
+  ;; editor repl support
+  nrepl {:mvn/version "0.6.0"}
+  }}
+  
