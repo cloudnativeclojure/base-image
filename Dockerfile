@@ -11,4 +11,9 @@ WORKDIR /usr/src/
 COPY deps.edn /usr/src/
 RUN echo '(println "Caching common dependencies.")' | clj -
 
-Run rm /usr/src/deps.edn
+# Duh.
+RUN mkdir src
+COPY src /usr/src/src
+
+# don't delete it yet, for testing.
+# Run rm /usr/src/deps.edn
