@@ -12,7 +12,7 @@ COPY deps.edn /usr/src/
 RUN echo '(println "Caching common dependencies.")' | clj -
 
 # Duh.
-RUN mkdir src
+RUN mkdir -p /usr/src/src
 COPY src /usr/src/src
 
 # don't delete it yet, for testing.
